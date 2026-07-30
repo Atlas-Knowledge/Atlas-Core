@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "title": "Atlas Entity",
+
+  "description": "Core Entity object used inside Atlas Engine.",
+
+  "type": "object",
+
+  "required": [
+    "id",
+    "name",
+    "type",
+    "description",
+    "confidence",
+    "sources"
+  ],
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+
+    "name": {
+      "type": "string"
+    },
+
+    "type": {
+      "type": "string"
+    },
+
+    "description": {
+      "type": "string"
+    },
+
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
