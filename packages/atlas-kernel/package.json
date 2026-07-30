@@ -1,0 +1,16 @@
+{
+  "name": "@atlas/kernel",
+  "version": "0.1.0",
+  "description": "Atlas Kernel - The core knowledge model of the Atlas Engine.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  }
+}
