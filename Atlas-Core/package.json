@@ -1,0 +1,14 @@
+{
+  "name": "atlas-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Atlas Engine - Core Repository",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces"
+  }
+}
