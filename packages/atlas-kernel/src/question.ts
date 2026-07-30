@@ -3,6 +3,11 @@
  * Core Question Definition
  */
 
+import {
+  UUID,
+  ConfidenceScore
+} from "./types";
+
 export enum QuestionStatus {
   OPEN = "OPEN",
   UNDER_RESEARCH = "UNDER_RESEARCH",
@@ -14,7 +19,7 @@ export interface Question {
   /**
    * Unique identifier
    */
-  id: string;
+  id: UUID;
 
   /**
    * Question title
@@ -39,15 +44,15 @@ export interface Question {
   /**
    * Confidence score (0–100)
    */
-  confidence: number;
+  confidence: ConfidenceScore;
 
   /**
-   * Related entity IDs
+   * Related Entity IDs
    */
-  entities: string[];
+  entities: UUID[];
 
   /**
-   * Related evidence IDs
+   * Related Evidence IDs
    */
-  evidence: string[];
+  evidence: UUID[];
 }
