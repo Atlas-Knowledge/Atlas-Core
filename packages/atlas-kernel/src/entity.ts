@@ -3,11 +3,18 @@
  * Core Entity Definition
  */
 
+import {
+  UUID,
+  ConfidenceScore,
+  EntityType,
+  SourceReference
+} from "./types";
+
 export interface Entity {
   /**
    * Unique identifier
    */
-  id: string;
+  id: UUID;
 
   /**
    * Human readable name
@@ -16,12 +23,8 @@ export interface Entity {
 
   /**
    * Entity classification
-   * Example:
-   * Human
-   * Planet
-   * Disease
    */
-  type: string;
+  type: EntityType;
 
   /**
    * Description
@@ -31,10 +34,10 @@ export interface Entity {
   /**
    * Confidence score (0-100)
    */
-  confidence: number;
+  confidence: ConfidenceScore;
 
   /**
-   * List of evidence identifiers
+   * Source references
    */
-  sources: string[];
+  sources: SourceReference[];
 }
