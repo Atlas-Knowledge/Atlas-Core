@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "title": "Atlas Evidence",
+
+  "description": "Evidence object used to support or challenge knowledge.",
+
+  "type": "object",
+
+  "required": [
+    "id",
+    "title",
+    "source",
+    "type",
+    "reliability",
+    "publishedAt"
+  ],
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+
+    "title": {
+      "type": "string"
+    },
+
+    "source": {
+      "type": "string"
+    },
+
+    "type": {
+      "type": "string",
+      "enum": [
+        "SCIENTIFIC_PAPER",
+        "BOOK",
+        "EXPERIMENT",
+        "DATASET",
+        "HISTORICAL_RECORD",
+        "OTHER"
+      ]
+    },
+
+    "reliability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+
+    "publishedAt": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
