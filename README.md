@@ -10,13 +10,13 @@
 
 # Executive Summary
 
-Atlas Core is the program root repository of the Atlas ecosystem.
+Atlas Core is the constitutional, architectural, and operational root of the Atlas ecosystem.
 
-It serves as the single source of truth for the Atlas program by coordinating architecture, governance, repository relationships, release alignment, and ecosystem metadata.
+It serves as the **Program Root Repository**, providing the governance, architecture, repository coordination, ecosystem metadata, and release alignment required to manage Atlas as a long-term standards-driven platform.
 
-Atlas Core does **not** implement runtime services, business logic, SDKs, or execution engines.
+Atlas Core does **not** define technical standards, nor does it implement runtime services, SDKs, execution engines, or business logic.
 
-Instead, it provides the organizational, architectural, and operational foundation upon which the entire Atlas ecosystem is built.
+Instead, it coordinates the ecosystem that enables those capabilities.
 
 ---
 
@@ -24,9 +24,23 @@ Instead, it provides the organizational, architectural, and operational foundati
 
 Atlas is an open standards-driven platform for organizing, validating, reasoning about, and discovering knowledge.
 
-Rather than being a single application, Atlas is an ecosystem of specifications, reference implementations, tools, and infrastructure designed to support trustworthy, interoperable, and scalable knowledge systems.
+Rather than being a single application, Atlas is an ecosystem of specifications, reference implementations, developer tools, and foundational infrastructure designed to support trustworthy, interoperable, and scalable knowledge systems.
 
-Atlas follows a **Standards First** philosophy: specifications are defined before implementations, and every reference implementation is validated through conformance testing.
+Atlas follows a **Standards First** philosophy: specifications are defined before implementations, and every implementation is validated through conformance testing.
+
+---
+
+# Atlas at a Glance
+
+| Item | Value |
+|------|-------|
+| Program | Atlas |
+| Repository | Atlas-Core |
+| Type | Program Root Repository |
+| Architecture | Multi-Repository |
+| Development Model | Standards First |
+| Current Phase | Foundation |
+| Architecture Baseline | v1.0 (Frozen) |
 
 ---
 
@@ -44,26 +58,29 @@ Build the world's most trusted foundational infrastructure for scientific and st
 
 # Responsibilities
 
-Atlas Core is responsible for:
+Atlas Core coordinates the Atlas ecosystem through:
 
-- Program architecture
-- Ecosystem governance
-- Repository registry
-- Global roadmap
-- Release coordination
-- Architecture baseline
-- Compatibility matrix
-- Ecosystem manifests
-- Bootstrap assets
+- Program Architecture
+- Ecosystem Governance
+- Repository Registry
+- Global Roadmap
+- Architecture Baseline
+- Release Coordination
+- Compatibility Matrix
+- Ecosystem Manifests
+- Bootstrap Assets
 
-Atlas Core is **not** responsible for:
+Atlas Core intentionally does **not** implement:
 
-- Runtime execution
-- Kernel implementation
-- SDK implementation
-- Registry implementation
-- CLI implementation
-- Application logic
+- Runtime Services
+- Business Logic
+- Execution Kernel
+- Registry Services
+- SDKs
+- CLI Tools
+- Applications
+
+These responsibilities belong to their dedicated repositories.
 
 ---
 
@@ -114,7 +131,7 @@ Applications
 
 # Development Lifecycle
 
-Every architectural change follows the same lifecycle.
+Every architectural or functional change follows the same governance lifecycle.
 
 ```
 Idea
@@ -137,7 +154,7 @@ Reference Implementation
 
 ---
 
-# Repository Model
+# Atlas Repository Model
 
 Every Atlas repository follows the Atlas Repository Model (ARM).
 
@@ -175,19 +192,19 @@ Maintenance
 
 Atlas is built upon the following principles:
 
-- Standards before implementation
-- Governance before code
-- Evidence before conclusions
-- Every claim must have a source
-- Facts are separated from hypotheses
-- Unknown is not false
-- Transparency over automation
-- Technology neutrality
-- Interoperability by design
-- Independent repositories
-- Independent versioning
-- Independent CI/CD
-- Reference implementations over assumptions
+- Standards before implementation.
+- Governance before code.
+- Evidence before conclusions.
+- Every claim must have a source.
+- Facts are separated from hypotheses.
+- Unknown is not false.
+- Transparency over automation.
+- Technology neutrality.
+- Interoperability by design.
+- Independent repositories.
+- Independent versioning.
+- Independent CI/CD.
+- Reference implementations over assumptions.
 
 ---
 
@@ -205,20 +222,20 @@ Atlas is built upon the following principles:
 
 # Documentation
 
-The recommended reading order is:
+Recommended reading order:
 
-1. `MISSION.md`
-2. `VISION.md`
-3. `MANIFESTO.md`
-4. `PHILOSOPHY.md`
-5. `PRINCIPLES.md`
-6. `ARCHITECTURE.md`
-7. `ECOSYSTEM.md`
-8. `PROJECTS.md`
-9. `ROADMAP.md`
-10. `GOVERNANCE.md`
+1. MISSION.md
+2. VISION.md
+3. MANIFESTO.md
+4. PHILOSOPHY.md
+5. PRINCIPLES.md
+6. ARCHITECTURE.md
+7. ECOSYSTEM.md
+8. PROJECTS.md
+9. ROADMAP.md
+10. GOVERNANCE.md
 
-New contributors should start with:
+If you are new to Atlas, begin with:
 
 ```
 docs/START_HERE.md
@@ -226,23 +243,10 @@ docs/START_HERE.md
 
 ---
 
-# Repository Information
-
-| Item | Value |
-|------|-------|
-| Repository | Atlas-Core |
-| Type | Program Root Repository |
-| Architecture | Multi-Repository |
-| Development Model | Standards First |
-| Governance | RFC → ADR → Specification → CTS |
-| Status | Foundation Phase |
-
----
-
 # License
 
-This repository is released under the license defined in `LICENSE`.
+This repository is distributed under the terms specified in the `LICENSE` file.
 
 ---
 
-**Atlas Core is the constitutional and operational foundation of the Atlas ecosystem.**
+> **Atlas Core is the constitutional, architectural, and operational foundation of the Atlas ecosystem.**
