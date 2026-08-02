@@ -1,4 +1,6 @@
-# Atlas
+# Atlas Core
+
+> The Program Root Repository of the Atlas Ecosystem
 
 > The Foundational Infrastructure for Scientific and Structured Knowledge
 
