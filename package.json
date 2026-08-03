@@ -2,7 +2,7 @@
   "name": "atlas-core",
   "version": "0.1.0",
   "private": true,
-  "description": "Atlas Engine - Core Repository",
+  "description": "Atlas Core - The Program Root Repository of the Atlas Ecosystem",
   "license": "MIT",
   "workspaces": [
     "packages/*"
@@ -10,6 +10,25 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces"
+  },
+  "keywords": [
+    "atlas",
+    "knowledge",
+    "standards",
+    "architecture",
+    "governance",
+    "ecosystem"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<ORG>/Atlas-Core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<ORG>/Atlas-Core/issues"
+  },
+  "homepage": "https://github.com/<ORG>/Atlas-Core",
+  "engines": {
+    "node": ">=22"
   },
   "devDependencies": {
     "typescript": "^5.9.2"
